@@ -1,4 +1,4 @@
 <td>{id}</td>
-<td>{code}</td>
-<td>{from}</td>
-<td>{to}</td>
+<td title="{airline}">{code}</td>
+<td title="Departure time: {departureTime}">{from}</td>
+<td title="Arrival time: {arrivalTime}">{to}</td>
