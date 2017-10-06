@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: danie
+ * User: daniel
  * Date: 2017-10-05
  * Time: 4:50 PM
  */
@@ -18,7 +18,7 @@ class Flights extends Application {
             'table_open' => '<table class="table">'
         );
         $this->table->set_template($parms);
-        $this->table->set_heading('', 'ID', 'Flight', 'Departure', 'Arrival');
+        $this->table->set_heading('', 'ID', 'Departure', 'Arrival');
         $rows = $this->table->make_columns($cells, 1);
 
         $this->data['table'] = $this->table->generate($rows);
