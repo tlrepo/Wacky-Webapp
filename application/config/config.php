@@ -1,6 +1,20 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
+// the menu basics (text navbar)
+$config['menu_choices'] = array(
+    'menudata' => array(
+        //'name' => 'Homepage' Note: 'Homepage' will display in navbar
+        //'link' => '/homepage' Note: '/homepage' is the controller
+        array('name' => 'Homepage', 'link' => '/homepage'),
+        array('name' => 'Fleets', 'link' => '/fleet'),
+        array('name' => 'Flights', 'link' => '/flights'),
+        array('name' => 'WelcomePage', 'link' => '/welcome'),
+        array('name' => 'Info', 'link' => '/info')
+    )
+);
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
