@@ -12,34 +12,37 @@
  * @author Michael
  */
 class Planes extends CI_Model {
-    
+
     var $data = array(
-		'1'	 => array('id'	 => 'C123456', 'type'	 => '737-800'),
-		'2'	 => array('id'	 => 'C521469', 'type'	 => 'A321')
-	);
+        '1' => array('id' => 'C123456', 'type' => '737-800'),
+        '2' => array('id' => 'C521469', 'type' => 'A321'),
+        '3' => array('id' => 'B971156', 'type' => 'Boeing 747'),
+        '4' => array('id' => 'D918275', 'type' => 'Airbus A340'),
+        '5' => array('id' => 'C521469', 'type' => 'Boeing 787'),
+        '6' => array('id' => 'D521469', 'type' => 'Boeing 737'),
+        '7' => array('id' => 'C420', 'type' => 'F-22'),
+        '8' => array('id' => 'F521469', 'type' => 'Bugatti')
+    );
 
-	// Constructor
-	public function __construct()
-	{
-		parent::__construct();
+    // Constructor
+    public function __construct() {
+        parent::__construct();
 
-		// inject each "record" key into the record itself, for ease of presentation
-		foreach ($this->data as $key => $record)
-		{
-			$record['key'] = $key;
-			$this->data[$key] = $record;
-		}
-	}
+        // inject each "record" key into the record itself, for ease of presentation
+        foreach ($this->data as $key => $record) {
+            $record['key'] = $key;
+            $this->data[$key] = $record;
+        }
+    }
 
-	// retrieve a single quote, null if not found
-	public function get($which)
-	{
-		return !isset($this->data[$which]) ? null : $this->data[$which];
-	}
+    // retrieve a single quote, null if not found
+    public function get($which) {
+        return !isset($this->data[$which]) ? null : $this->data[$which];
+    }
 
-	// retrieve all of the quotes
-	public function all()
-	{
-		return $this->data;
-	}
+    // retrieve all of the quotes
+    public function all() {
+        return $this->data;
+    }
+
 }
