@@ -16,12 +16,11 @@ class Planes extends CI_Model {
     var $data = array(
         '1' => array('id' => 'C123456', 'type' => '737-800'),
         '2' => array('id' => 'C521469', 'type' => 'A321'),
-        '3' => array('id' => 'B971156', 'type' => 'Boeing 747'),
-        '4' => array('id' => 'D918275', 'type' => 'Airbus A340'),
+        '3' => array('id' => 'C971156', 'type' => 'Boeing 747'),
+        '4' => array('id' => 'C918275', 'type' => 'Airbus A340'),
         '5' => array('id' => 'C521469', 'type' => 'Boeing 787'),
-        '6' => array('id' => 'D521469', 'type' => 'Boeing 737'),
-        '7' => array('id' => 'C420', 'type' => 'F-22'),
-        '8' => array('id' => 'F521469', 'type' => 'Bugatti')
+        '6' => array('id' => 'C420', 'type' => 'F-22'),
+        '7' => array('id' => 'C521470', 'type' => 'Bugatti')
     );
 
     // Constructor
