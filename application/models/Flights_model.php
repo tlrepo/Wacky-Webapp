@@ -9,15 +9,30 @@
 class Flights_model extends CI_Model {
 
     var $data = array(
-        '1' => array('id' => 'C1', 'code' => 'WS246', 'from' => 'Vancouver',
+        '1' => array('id' => 'C123456', 'from' => 'Vancouver',
             'to' => 'Calgary', 'departureTime' => '08:00', 'arrivalTime' => '09:30',
-            'airline' => 'WestJet'),
-        '2' => array('id' => 'C2', 'code' => 'AC8081', 'from' => 'Vancouver',
-            'to' => 'Victoria', 'departureTime' => '08:00', 'arrivalTime' => '08:40',
-            'airline' => 'Air Canada'),
-        '3' => array('id' => 'C3', 'code' => 'AC8669', 'from' => 'San Diego',
-            'to' => 'Vancouver', 'departureTime' => '08:00', 'arrivalTime' => '11:10',
-            'airline' => 'Air Canada')
+            'airline' => '737-800'),
+        '2' => array('id' => 'C521469', 'from' => 'Vancouver',
+            'to' => 'Ottawa', 'departureTime' => '08:00', 'arrivalTime' => '12:00',
+            'airline' => 'A321'),
+        '3' => array('id' => 'C971156', 'from' => 'Vancouver',
+            'to' => 'Calgary', 'departureTime' => '09:00', 'arrivalTime' => '10:00',
+            'airline' => 'Boeing 747'),
+        '4' => array('id' => 'C918275', 'from' => 'Vancouver',
+            'to' => 'Ottawa', 'departureTime' => '10:00', 'arrivalTime' => '14:00',
+            'airline' => 'Airbus A340'),
+        '5' => array('id' => 'C123456', 'from' => 'Calgary',
+            'to' => 'Vancouver', 'departureTime' => '14:00', 'arrivalTime' => '15:30',
+            'airline' => '737-800'),
+        '6' => array('id' => 'C521469', 'from' => 'Ottawa',
+            'to' => 'Vancouver', 'departureTime' => '15:00', 'arrivalTime' => '17:00',
+            'airline' => 'A321'),
+        '7' => array('id' => 'C971156', 'from' => 'Calgary',
+            'to' => 'Vancouver', 'departureTime' => '16:00', 'arrivalTime' => '17:00',
+            'airline' => 'Boeing 747'),
+        '8' => array('id' => 'C918275', 'from' => 'Ottawa',
+            'to' => 'Vancouver', 'departureTime' => '18:00', 'arrivalTime' => '20:00',
+            'airline' => 'Airbus A340')
     );
 
     // Constructor
