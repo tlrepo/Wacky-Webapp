@@ -12,7 +12,7 @@ class Info extends Application {
         $this->data['pagebody'] = 'fleet';
         $source = $this->planes->all();
         header("Content-type: application/json");
-        echo json_encode($source,JSON_PRETTY_PRINT);
+        echo json_encode($source, JSON_PRETTY_PRINT);
     }
 
 }
