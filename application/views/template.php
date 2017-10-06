@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<?php
+if (!defined('APPPATH'))
+	exit('No direct script access allowed');
+?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
     <head>
         <meta charset="utf-8">
         <title>{pagetitle}</title>
         <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" type="text/css" href="/assets/css/default.css"/>
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
     </head>
     <body>
-        <div id="nav-bar">
-            {menubar}
-        </div>
-        <div id="container">
-            {content}
-            <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. 
+        <<div class="container">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    {menubar} 
+                </div>
+            </div>           
+            <div id="content">
+                <h1>{pagetitle}</h1>
+                {content}
+            </div>
+            <div>
+                <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. 
                 {ci_version}</p>
+            </div>     
         </div>
+        <script src="/assets/js/jquery-1.11.1.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
     </body>
 </html>
