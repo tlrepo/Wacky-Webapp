@@ -4,10 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
  * Homepage will be the default controller where it will display the number of
- *  -Air lines
- *  -Active air lines
- *  -Flight schedule
- *  -Total income
+ * -planes
+ * -flights
+ * -airline destinations
  *
  * @author Evan
  */
@@ -17,15 +16,20 @@ class Homepage extends Application {
      * Homepage controller.
      */
     public function index() {
-        $test = $this->flights_model->get('1');
-        $source = $this->planes->all();
-        $this->data['planes'] = $source;
-        $this->data['numOfPlanes'] = count($source);
+        $flightData = $this->flights_model->all();
+        $planesSource = $this->planes->all();
+        $destination = array();
+        foreach($flightData as $flights) {
+            if(!in_array($flights['airline'], $destination)) {
+                array_push($destination, $flights['airline']);
+            }
+        }
+        //Split the array up with commas
+        $this->data['destinationAirline'] = implode(', ', $destination);
+        $this->data['numOfPlanes'] = count($planesSource);
+        $this->data['numOfFlights'] = count($flightData);
         $this->data['pagebody'] = 'homepage';
-        $this->data['airplane'] = '1';
-        $this->data['airport'] = '20';
-        $this->data['schedule'] = '80';
-        $this->data['income'] = '9999$';
+        $this->data['income'] = '$16,777,216';
         $this->render();
     }
 
