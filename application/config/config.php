@@ -10,7 +10,7 @@ $config['menu_choices'] = array(
         array('name' => 'Homepage', 'link' => '/homepage'),
         array('name' => 'Fleets', 'link' => '/fleet'),
         array('name' => 'Flights', 'link' => '/flights'),
-        array('name' => 'WelcomePage', 'link' => '/welcome')
+        array('name' => 'Info', 'link' => '/info')
     )
 );
 
