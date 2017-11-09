@@ -9,8 +9,6 @@ class Info extends Application {
     }
 
     public function index() {
-        $role = $this->session->userdata('userrole');    
-        $this->data['pagetitle'] = 'Info Page ('. $role . ')';
         $this->data['pagebody'] = 'fleet';
         $source = $this->planes->all();
         header("Content-type: application/json");
