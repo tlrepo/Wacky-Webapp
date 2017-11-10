@@ -13,4 +13,6 @@
         {/planes}
     </table>
     
+    <p><a href="info/fleet">Info </a></p>
+    
 </div>
