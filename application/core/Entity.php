@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: daniel
- * Date: 2017-11-10
- * Time: 12:31 AM
- */
-
 class Entity extends CI_Model {
     // If this class has a setProp method, use it, else modify the property directly
     public function __set($key, $value) {
@@ -17,7 +10,7 @@ class Entity extends CI_Model {
         if (method_exists($this, $method)) {
             $this->$method($value);
             return $this;
-        }
+    }
         // Otherwise, just set the property value directly.
         $this->$key = $value;
         return $this;
