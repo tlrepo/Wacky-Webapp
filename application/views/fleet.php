@@ -1,3 +1,4 @@
+
 <div id="body">
     
     <table>
@@ -12,5 +13,7 @@
         </tr>
         {/planes}
     </table>
+    
+    <p><a href="info/fleet">Info </a></p>
     
 </div>
