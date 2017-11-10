@@ -35,4 +35,29 @@ class Flight extends Entity {
     public function setArrivalTime($time) {
         $this->arrivalTime = $time;
     }
+
+    // Return the id of the flight
+    public function getId() {
+        return $this->id;
+    }
+
+    // Return the departure airport
+    public function getDeparture() {
+        return $this->departure;
+    }
+
+    // Return the arrival airport
+    public function getArrival() {
+        return $this->arrival;
+    }
+
+    // Return the departure time of the flight
+    public function getDepartureTime() {
+        return $this->departureTime;
+    }
+
+    // Return the arrival time of the flight
+    public function getArrivalTime() {
+        return $this->arrivalTime;
+    }
 }
