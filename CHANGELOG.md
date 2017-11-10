@@ -10,14 +10,14 @@ Modified:
 	* autoload.php
 
 CheatSheet
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet &nbsp;
 Escape character = \\
 
 ## Version: 2.0
 Date:    11/9/2017
 
 Added:
-- Controller
+- controller
 	* Roles.php
 
 Modified:
@@ -28,7 +28,7 @@ Modified:
 - views	
 	* template.php
 	* \_menubar.php	
-- Controllers
+- controllers
 	* Homepage.php
 	* info
 		- Fleet.php
