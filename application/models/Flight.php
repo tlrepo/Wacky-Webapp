@@ -11,12 +11,6 @@ class Flight extends Entity {
     private $departureTime;
     private $arrivalTime;
 
-    // id = unique alphanumeric identifier (starting with first letter of team name)
-    // departure = no departure before 08:00
-    // arrival = no landing after 22:00
-    // minimum 30 min between plane's landing and departure
-    // fleet must be back by the end of the day
-
     // Set the ID of the flight
     public function setId($id) {
         $this->id = $id;
