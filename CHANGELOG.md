@@ -11,7 +11,26 @@ Modified:
 
 CheatSheet
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+Escape character = \\
 
+## Version: 2.0
+Date:    11/9/2017
+
+Added:
+- Controller
+	* Roles.php
+Modified:
+- config
+	* config.php
+	* constants.php
+	* autoload.php
+- views	
+	* template.php
+	* \_menubar.php	
+- Controller/info
+	* Fleet.php
+	* Flights.php
+	* Homepage.php
 
 
 ## Version: 1.0
@@ -19,17 +38,4 @@ Date:	 11/9/2017
 
 Initial build from assignment 1
 
-##Version: 2.0
-Date:    11/9/2017
 
-Added:
-        - Roles.php
-Modified:
-        - config.php
-        - constants.php
-        - autoload.php
-        - template.php
-        - _menubar.php
-        - Fleet.php
-        - Flights.php
-        - Homepage.php
