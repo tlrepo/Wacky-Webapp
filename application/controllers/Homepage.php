@@ -25,6 +25,8 @@ class Homepage extends Application {
             }
         }
         //Split the array up with commas
+        $role = $this->session->userdata('userrole');    
+        $this->data['pagetitle'] = 'Homepage ('. $role . ')';
         $this->data['destinationAirline'] = implode(', ', $destination);
         $this->data['numOfPlanes'] = count($planesSource);
         $this->data['numOfFlights'] = count($flightData);
