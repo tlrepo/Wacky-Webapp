@@ -17,4 +17,14 @@ class Plane extends Entity {
     public function setType($type) {
         $this->type = $type;
     }
+    
+    // Return plane ID
+    public function getId() {
+        return $this->id;
+    }
+
+    // Return plane type
+    public function getType() {
+        return $this->type;
+    }
 }
