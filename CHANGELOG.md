@@ -3,13 +3,14 @@
 Date:	 11/9/2017
 Added:
 	- models
-    - Tasks.php
+    		- Tasks.php
 	
 Modified:
 	- config
-    - autoload.php
+    		- autoload.php
 
-
+CheatSheet
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 
 
