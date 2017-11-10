@@ -19,6 +19,7 @@ Date:    11/9/2017
 Added:
 - Controller
 	* Roles.php
+
 Modified:
 - config
 	* config.php
@@ -27,10 +28,11 @@ Modified:
 - views	
 	* template.php
 	* \_menubar.php	
-- Controller/info
-	* Fleet.php
-	* Flights.php
+- Controllers
 	* Homepage.php
+	* info
+		- Fleet.php
+		- Flights.php
 
 
 ## Version: 1.0
