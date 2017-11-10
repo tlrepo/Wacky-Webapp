@@ -1,12 +1,20 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: danie
- * Date: 2017-11-09
- * Time: 6:30 PM
+ * Class Plane
+ *
+ * @author Daniel Park
  */
+class Plane extends Entity {
+    private $id;
+    private $type;
 
-class Plane
-{
+    // Set the id of the plane
+    public function setId($id) {
+        $this->id = $id;
+    }
 
+    // Set the plane type;
+    public function setType($type) {
+        $this->type = $type;
+    }
 }
