@@ -13,7 +13,7 @@ if (!defined('APPPATH'))
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
     </head>
     <body>
-        <<div class="container">
+        <div class="container">
             <div class="navbar">
                 <div class="navbar-inner">
                     {menubar} 
