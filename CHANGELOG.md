@@ -13,6 +13,19 @@ CheatSheet
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet &nbsp;
 Escape character = \\
 
+## Version: 2.1
+Date:    11/9/2017
+
+Added:
+- .travis.yml
+- phpunit.xml.dist
+- tests
+    * Bootstrap.php
+
+Modified:
+- .gitignore
+	
+
 ## Version: 2.0
 Date:    11/9/2017
 
