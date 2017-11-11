@@ -1,3 +1,4 @@
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -8,9 +9,9 @@ $config['menu_choices'] = array(
         //'name' => 'Homepage' Note: 'Homepage' will display in navbar
         //'link' => '/homepage' Note: '/homepage' is the controller
         array('name' => 'Homepage', 'link' => '/homepage'),
-        array('name' => 'Fleets', 'link' => '/fleet'),
-        array('name' => 'Flights', 'link' => '/flights'),
-        array('name' => 'Info', 'link' => '/info')
+        array('name' => 'Fleets', 'link' => 'fleet'),
+        array('name' => 'Flights', 'link' => 'flights'),
+        array('name' => 'Info', 'link' => 'info/info')
     )
 );
 
@@ -383,7 +384,7 @@ $config['encryption_key'] = '';
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = '/tmp';
+$config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
@@ -524,3 +525,4 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
