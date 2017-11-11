@@ -13,6 +13,18 @@ CheatSheet
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 Escape character = \\
 
+## Version: 2.2
+Date:    11/10/2017
+
+Added:
+- core
+    * Entity.php
+- models
+    * Flight.php
+    * Plane.php
+    * Wacky_server_model.php
+
+
 ## Version: 2.1
 Date:    11/9/2017
 
