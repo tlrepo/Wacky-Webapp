@@ -6,6 +6,7 @@
  */
 class Flight extends Entity {
     private $id;
+    private $model;
     private $departure;
     private $arrival;
     private $departureTime;
@@ -14,6 +15,11 @@ class Flight extends Entity {
     // Set the ID of the flight
     public function setId($id) {
         $this->id = $id;
+    }
+
+    // Set the aircraft model
+    public function setModel($model) {
+        $this->model = $model;
     }
 
     // Set the departure airport of the flight
@@ -39,6 +45,11 @@ class Flight extends Entity {
     // Return the id of the flight
     public function getId() {
         return $this->id;
+    }
+
+    // Return the aircraft model
+    public function getModel() {
+        return $this->model;
     }
 
     // Return the departure airport
