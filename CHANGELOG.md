@@ -18,6 +18,23 @@ Date:    11/10/2017
 
 Added:
 - core
+    * CSV_Model.php
+    * DataMapper.php
+    * Memory_Model.php
+    * RDB_Model.php
+- data
+    * flights.csv
+    * fleet.csv
+
+Modified:
+
+
+
+## Version: 2.2
+Date:    11/10/2017
+
+Added:
+- core
     * Entity.php
 - models
     * Flight.php
