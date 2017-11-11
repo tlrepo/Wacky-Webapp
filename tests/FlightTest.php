@@ -16,7 +16,7 @@ class FlightTest extends PHPUnit_Framework_Testcase {
     public function setUp() {
         $this->flight = new Flight();
     }
-    
+
     public function testId() {
         $this->flight->__set("id", "C0001");
         $this->assertEquals("C0001", $this->flight->getId());
