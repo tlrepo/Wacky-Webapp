@@ -1,7 +1,7 @@
 
 <div id="body">
     
-    <table>
+    <table class="container">
         <tr>
             <td>Fleet ID</td>
             <td>Manufacturer</td>
