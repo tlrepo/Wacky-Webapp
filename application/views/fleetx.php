@@ -1,4 +1,4 @@
-<!-- the template for the fleet page-->
+<!-- adding a new fleet page with a button-->
 <div id="body">
     
     <table>
@@ -15,5 +15,6 @@
     </table>
     
     <p><a href="info/fleet">Info </a></p>
+    <a href="info/fleet/add"><input type="button" value="Add a new Fleet"/></a>
     
 </div>

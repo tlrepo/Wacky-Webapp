@@ -24,7 +24,12 @@ class Flights extends Application {
         $rows = $this->table->make_columns($cells, 1);
 
         $this->data['table'] = $this->table->generate($rows);
-        $this->data['pagebody'] = 'flights_page';
+        //checking if the role is allowed owner and redirecting it to the right view
+        if ($role == ROLE_OWNER) {
+            $this->data['pagebody'] = 'flightsx';
+        } else {
+            $this->data['pagebody'] = 'flights_page';
+        }
         $this->render();
     }
 }
