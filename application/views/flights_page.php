@@ -1,5 +1,5 @@
 <div id="body">
-    <table>
+    <table class="container">
         <tr>
             <td>Flight ID</td>
             <td>Model</td>
