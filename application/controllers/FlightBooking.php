@@ -37,7 +37,6 @@ class FlightBooking extends Application {
 
     // handle form submission
     public function submit() {
-
         // retrieve & update data transfer buffer
         //$flight = (array) $this->session->userdata('flight');
         //$flight = array_merge($flight, $this->input->post());
