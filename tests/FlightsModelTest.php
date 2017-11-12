@@ -1,5 +1,4 @@
 <?php
-include_once('../application/models/Flights_model.php');
 // Backward compatibility
 if (!class_exists('\PHPUnit_Framework_TestCase')) {
     class_alias('PHPUnit\Framework\TestCase','PHPUnit_Framework_TestCase');
