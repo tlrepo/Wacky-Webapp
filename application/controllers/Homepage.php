@@ -22,7 +22,7 @@ class Homepage extends Application {
     }
     
     /*
-     * Returns the 
+     * Returns the plane destinations.
      */
     public function getFlightDestination($arr) {
         $destination = array();  
