@@ -8,10 +8,9 @@
 
 class Flights extends Application {
     public function index() {
-        $role = $this->session->userdata('userrole');    
+        $role = $this->session->userdata('userrole');
         $this->data['pagetitle'] = 'Flights Page ('. $role . ')';
         $source = $this->flights_model->all();
-
         foreach ($source as $flight)
             $cells[] = $this->parser->parse('_cell', (array) $flight, true);
 

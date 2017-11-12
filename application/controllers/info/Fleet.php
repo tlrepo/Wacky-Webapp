@@ -24,5 +24,4 @@ class Fleet extends Application {
         }
         $this->render();
     }
-
 }
