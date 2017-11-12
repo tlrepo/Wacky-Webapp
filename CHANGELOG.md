@@ -14,11 +14,24 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 Escape character = \\
 
 
+## Version: 2.5
+Date: 11/11/2017
+
+Modified:
+- controller
+    * Homepage.php
+- views
+    * homepage.php
+    * fleet.php
+    * flights_page.php
+    * template.php
+    
 
 ## Version: 2.4
 Date:    11/11/2017
 
 Added:
+
 - controllers
     * FlightBooking.php
 - models
@@ -31,6 +44,17 @@ Modified:
 - config
     * autoload.php
     * config.php
+- tests
+    * FlightTest.php
+    * PlaneTest.php
+    * FlightsModelTest.php
+    * PlanesModelTest.php
+- models
+    * Flight.php
+    * Plane.php
+- phpunit.xml.dist
+- .gitignore
+
 
 
 ## Version: 2.3
