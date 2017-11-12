@@ -1,4 +1,6 @@
 <?php
+include_once('../application/core/Entity.php');
+
 /**
  * Class Flight
  *
@@ -14,32 +16,42 @@ class Flight extends Entity {
 
     // Set the ID of the flight
     public function setId($id) {
-        $this->id = $id;
+        // ID must start with a capital letter and contain at least 4 numbers
+        if (preg_match('/^[A-Z][0-9]{4,}$/', $id))
+            $this->id = $id;
     }
 
     // Set the aircraft model
     public function setModel($model) {
-        $this->model = $model;
+        $models = array("Phenom 100", "Citation Mustang", "Avanti II", "PC-12 NG", "King Air C90");
+
+        if (in_array($model, $models))
+            $this->model = $model;
     }
 
     // Set the departure airport of the flight
     public function setDeparture($name) {
-        $this->departure = $name;
+        if (preg_match('/^[A-Z]{3}$/', $name))
+            $this->departure = $name;
     }
 
     // Set the arrival airport of the flight
     public function setArrival($name) {
-        $this->arrival = $name;
+        if (preg_match('/^[A-Z]{3}$/', $name))
+            $this->arrival = $name;
     }
 
     // Set the departure time of the flight
     public function setDepartureTime($time) {
-        $this->departureTime = $time;
+        // Format: HH:MM
+        if (preg_match('/^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/', $time))
+            $this->departureTime = $time;
     }
 
     // Set the arrival time of the flight
     public function setArrivalTime($time) {
-        $this->arrivalTime = $time;
+        if (preg_match('/^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$/', $time))
+            $this->arrivalTime = $time;
     }
 
     // Return the id of the flight

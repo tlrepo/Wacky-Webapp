@@ -13,6 +13,24 @@ CheatSheet
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 Escape character = \\
 
+## Version: 2.4
+Date:    11/11/2017
+
+Added:
+- tests
+    * FlightTest.php
+    * PlaneTest.php
+    * FlightsModelTest.php
+    * PlanesModelTest.php
+
+Modified:
+- models
+    * Flight.php
+    * Plane.php
+- phpunit.xml.dist
+- .gitignore
+
+
 ## Version: 2.3
 Date:    11/10/2017
 
