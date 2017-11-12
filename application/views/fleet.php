@@ -1,4 +1,4 @@
-
+<!-- the template for the fleet page-->
 <div id="body">
     
     <table class="container">
