@@ -6,8 +6,13 @@
 !*/cache/.htaccess
 .idea/
 /tmp
+
+
+.gitignore
+
 /tests/report/
-/data/*
+
+
 
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
@@ -19,4 +24,4 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 /vendor/
-/nbproject/private/
+/nbproject/

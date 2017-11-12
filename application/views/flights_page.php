@@ -1,5 +1,5 @@
 <div id="body">
-    <table>
+    <table class="container">
         <tr>
             <td>Flight ID</td>
             <td>Model</td>
@@ -19,5 +19,4 @@
         </tr>
         {/flights_model}
     </table>
-    <p><a href="info/flights">Info </a></p>
 </div>
