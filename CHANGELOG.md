@@ -1,17 +1,15 @@
-## Example entry
-## Version: 2.x
-Date:	 11/9/2017
-Added:
-- models
-	* Tasks.php
-	
-Modified:
-- config
-	* autoload.php
+CHANGELOG
 
-CheatSheet
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-Escape character = \\
+## Version: 2.8
+Date: 11/12/2017
+
+Modified:
+- Model
+    * App.php
+
+- Controller:
+    * FlightBooking.php
+
 
 ## Version: 2.7
 Date: 11/12/2017
@@ -33,7 +31,6 @@ Added:
     * flightsitemedit.php
     * fleettsitemedit.php
     
-
 
 ## Version: 2.6
 Date: 11/12/2017

@@ -117,10 +117,16 @@ class App extends CI_Model {
     ];
     // task destination
     private $destination = [
+        1 => 'YCG',
+        2 => 'ZGF',
+        3 => 'ZMH',
+        4 => 'YCW'
+        /*
         1 => 'Castlegar',
         2 => 'Grand Forks',
         3 => 'South Cariboo Region',
         4 => 'Chilliwack'
+         */
     ];
 
     public function __construct() {
