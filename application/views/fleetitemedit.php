@@ -1,12 +1,15 @@
 <h1>Task # {id}</h1>
-<form role="form" action="/mtce/submit" method="post">
-    {ftask}
-    {fpriority}
-    {fsize}
-    {fgroup}
-    {fstatus}
+<form role="form" action="/info/fleet/submit" method="post">
+    {ffleetId}
+    {fmanufacturer}
+    {fmodel}
+    {fprice}
+    {fseats}
+    {freach}
+    {fcruise}
+    {ftakeoff}
+    {fseats}
     {zsubmit}
 </form>
-{error}
-<a href="/mtce/cancel"><input type="button" value="Cancel the current edit"/></a>
-<a href="/mtce/delete"><input type="button" value="Delete this todo item"/></a>
+<a href="/info/fleet/edit"><input type="button" value="Cancel the current edit"/></a>
+<a href="/info/fleet/delete"><input type="button" value="Delete this todo item"/></a>

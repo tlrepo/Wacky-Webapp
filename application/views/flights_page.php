@@ -1,4 +1,4 @@
-
+<!-- Adding new view outline-->
 <div id="body">
     <table class="container">
         <tr>
@@ -20,6 +20,7 @@
         </tr>
         {/flights_model}
     </table>
+    <!-- Json link-->
     <p><a href="info/flights">Info </a></p>
 </div>
 
