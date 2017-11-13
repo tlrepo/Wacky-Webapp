@@ -14,8 +14,8 @@ class FlightBooking extends Application {
      * FlightBooking controller
      */
     public function index() {
-        //$role = $this->session->userdata('userrole');
-        $this->data['pagetitle'] = 'Flight Booking';
+        $role = $this->session->userdata('userrole');
+        $this->data['pagetitle'] = 'Flight Booking ('. $role . ')';
         $this->load->helper('form');
 
         // if no errors, pass an empty message
@@ -49,22 +49,19 @@ class FlightBooking extends Application {
         $this->data['pagetitle'] = 'Search Results';
         $flights = $this->session->userdata('flight');
         $flightOptions = [];
+        //grab all flights
         $source = $this->flights_model->all();
         $departure = $this->app->departure($flights->departure);
         $destination = $this->app->destination($flights->destination);
-
+        
+        //store into an array flights that match the selection
         foreach ($source as $flight) {
-            if ($flight->departure == $departure) {
+            if ($flight->departure == $departure && $flight->arrival == $destination) {
                 array_push($flightOptions, $flight);
             }
         }
-
-        foreach ($source as $flight) {
-            if ($flight->arrival == $destination) {
-                array_push($flightOptions, $flight);
-            }
-        }
-
+        
+        //show
         $this->data['pagebody'] = 'flights_page';
         $this->data['flights_model'] = $flightOptions;
         $this->render();
