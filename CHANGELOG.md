@@ -13,6 +13,27 @@ CheatSheet
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 Escape character = \\
 
+## Version: 2.7
+Date: 11/12/2017
+
+Modified:
+- Model
+    * App.php
+    * Planes.php
+    * Flights.php
+- config:
+    * config.php
+- Controller:
+    * info/Fleet.php
+    * info/Planes.php
+Added:
+- Views
+    * flightsx.php
+    * fleetx.php
+    * flightsitemedit.php
+    * fleettsitemedit.php
+    
+
 
 ## Version: 2.6
 Date: 11/12/2017
